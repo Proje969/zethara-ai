@@ -1,0 +1,136 @@
+# Zethara AI - Proje Readme Dosyası
+
+## Proje Tanımı
+Zethara AI, "Ateşin Kanatları" hikayesindeki Zethara karakterini bir yapay zeka ajanına dönüştüren bir projedir. Bu yapay zeka, kullanıcılarla dinamik bir şekilde etkileşim kurabilir, hikaye dünyasını keşfetmelerine yardımcı olabilir ve zengin bir deneyim sunabilir. Proje, modern web teknolojileri ve Node.js tabanlı bir altyapı ile geliştirilmiştir.
+
+---
+
+## Özellikler
+
+### 1. Dinamik Web Arayüzü
+- Kullanıcı dostu ve hikaye temalı bir tasarım.
+- Sürükleyici bir etkileşim deneyimi sunan animasyonlar.
+- Chat tabanlı etkileşim modülü.
+
+### 2. Yapay Zeka Ajanı
+- Karakterin kişiliği, geçmişi ve hikayesi ile uyumlu bir şekilde davranan bir AI.
+- Doğal dil işleme (NLP) teknolojileri ile donatılmış.
+- Anlık cevap verme ve karar alma yetenekleri.
+
+### 3. Entegrasyon ve Uyumluluk
+- API tabanlı bir altyapı.
+- Gelecekte farklı hikaye karakterlerinin entegrasyonuna uygun bir yapı.
+- Mobil ve masaüstü uyumlu.
+
+---
+
+## Kullanılan Teknolojiler
+- **Frontend:** React.js, TailwindCSS
+- **Backend:** Node.js, Express.js
+- **Veritabanı:** MongoDB
+- **Yapay Zeka:** OpenAI API
+- **Diğer:** Socket.IO (gerçek zamanlı iletişim), Vercel (dağıtım), Docker (konteynerleştirme)
+
+---
+
+## Kurulum Talimatları
+
+### Gereksinimler
+- Node.js (v18 ve üzeri)
+- Docker (isteğe bağlı)
+- Bir OpenAI API anahtarı
+
+### Adımlar
+1. **Depoyu Klonlayın:**
+   ```bash
+   git clone https://github.com/kullanici-adi/zethara-ai.git
+   cd zethara-ai
+   ```
+
+2. **Bağımlılıkları Yükleyin:**
+   ```bash
+   npm install
+   ```
+
+3. **Ortam Değişkenlerini Ayarlayın:**
+   `.env` dosyasını oluşturun ve aşağıdaki değişkenleri ekleyin:
+   ```env
+   OPENAI_API_KEY=your_openai_api_key
+   MONGODB_URI=your_mongodb_connection_string
+   PORT=3000
+   ```
+
+4. **Uygulamayı Çalıştırın:**
+   ```bash
+   npm start
+   ```
+   Tarayıcınızda `http://localhost:3000` adresine giderek uygulamayı görüntüleyebilirsiniz.
+
+---
+
+## Proje Dosya Yapısı
+```
+Zethara-AI/
+|-- public/
+|   |-- assets/ (Görseller ve medya dosyaları)
+|-- src/
+|   |-- components/ (React bileşenleri)
+|   |-- pages/ (Sayfa dosyaları)
+|   |-- services/ (API entegrasyonları)
+|   |-- utils/ (Yardımcı fonksiyonlar)
+|-- server/
+|   |-- routes/ (API uç noktaları)
+|   |-- models/ (Veritabanı modelleri)
+|   |-- controllers/ (İş mantığı katmanı)
+|-- .env (Ortam değişkenleri)
+|-- Dockerfile (Docker yapılandırması)
+|-- README.md
+```
+
+---
+
+## Sayfa Yapısı
+
+### Ana Sayfa
+- **Başlık:** Zethara AI
+- **Tanıtım:** Karakterin hikayesini ve yapay zeka özelliklerini tanıtan bir bölüm.
+- **Etkileşim Butonu:** "Zethara ile Konuş" butonu.
+
+### Sohbet Sayfası
+- Gerçek zamanlı sohbet penceresi.
+- Kullanıcı mesajları ve Zethara'nın cevapları için ayrılmış alanlar.
+- Temalı arka plan ve animasyonlar.
+
+### Hakkında Sayfası
+- Proje ile ilgili detaylar.
+- Geliştirici ekibi ve katkıda bulunanlar hakkında bilgi.
+
+---
+
+## Geliştirme Planı
+
+### Faz 1: Temel Yapay Zeka ve Arayüz
+- Zethara'nın kişiliğini tanımlama ve sohbet modülünü oluşturma.
+- Ana sayfa ve sohbet sayfasının tasarlanması.
+
+### Faz 2: Gelişmiş Özellikler
+- Sesli komut desteği.
+- Kullanıcı seçimlerine göre hikaye akışını değiştirme.
+
+### Faz 3: Dağıtım ve Geri Bildirim
+- Uygulamayı canlıya alma.
+- Kullanıcı geri bildirimleri ile iyileştirme.
+
+---
+
+## Katkıda Bulunma
+Katkıda bulunmak isteyenler için:
+1. Bu depoyu forklayın.
+2. Değişikliklerinizi yapın.
+3. Bir pull request gönderin.
+
+---
+
+## Lisans
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyin.
+
